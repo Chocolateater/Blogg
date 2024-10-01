@@ -112,6 +112,23 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: cosy
 
+algolia:
+  appId: WGHUVYJXP8
+  apiKey: 6d37f83c821644360ba456297b9400fd
+  adminApiKey: c111060f5851f8fe2e895e04a2810227
+  SearchOnlyAPIKey: 73f3ccbb1e2683b7da3d464098de7cbf
+  chunkSize: 5000
+  indexName: index
+  fields:
+    - content
+    - excerpt:strip
+    - categories
+    - title
+    - permalink
+    - slug
+    - tags
+    - title
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:

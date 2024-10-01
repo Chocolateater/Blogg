@@ -39,6 +39,9 @@ jobs:
           path: node_modules
           key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
 
+      - name: 安装 gulp
+        run: npm install gulp
+        
       - name: 安装插件
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
         run: 
