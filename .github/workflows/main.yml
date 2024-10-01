@@ -46,6 +46,8 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
         run: 
           npm install
+          git clone https://github.com/username/cosy.git themes/cosy
+          npm i hexo-theme-cosy --save
 
       - name: 部署博客
         run: 
