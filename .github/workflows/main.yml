@@ -46,6 +46,8 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
         run: 
           npm install
+          npm i hexo-theme-cosy
+          
 
       - name: 部署博客
         run: 
